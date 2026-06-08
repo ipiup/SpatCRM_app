@@ -97,15 +97,15 @@ app_theme <- bs_theme(
   version = 5, bg = "#0f1117", fg = "#e8eaf0",
   primary = "#5e9bff", secondary = "#7c5cbf",
   success = "#3ecf8e", warning = "#f5a623", danger = "#ff5f6d",
-  base_font    = font_google("DM Sans"),
-  heading_font = font_google("Space Grotesk"),
+#  base_font    = "Arial", #font_google("DM Sans"),
+#  heading_font = "Arial", # font_google("Space Grotesk"),
   `enable-rounded` = TRUE
 )
 
 pdark <- function(fig) {
   fig %>% layout(
     paper_bgcolor = "#161b2c", plot_bgcolor  = "#161b2c",
-    font   = list(color = "#e8eaf0", family = "DM Sans"),
+    font   = list(color = "#e8eaf0"),# family = "Arial", #"DM Sans"),
     legend = list(bgcolor = "#1e2338", bordercolor = "#2a2f45"),
     xaxis  = list(tickfont = list(color = "#7a80a0"), gridcolor = "#2a2f45", zerolinecolor = "#2a2f45"),
     yaxis  = list(tickfont = list(color = "#7a80a0"), gridcolor = "#2a2f45", zerolinecolor = "#2a2f45")
